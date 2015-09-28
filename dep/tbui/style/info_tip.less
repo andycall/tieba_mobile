@@ -1,0 +1,30 @@
+.info-tip {
+    position: relative;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: #666;
+    .iconfont {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        color: #d3d3d3;
+    }
+}
+
+.waring-info-tip {
+    &:extend(.info-tip all);
+    background: @waring-bg;
+    border: 1px solid @waring-border;
+}
+
+.error-info-tip {
+    &:extend(.info-tip all);
+    background: @error-bg;
+    border: 1px solid @error-border;
+}
+
+.success-info-tip {
+    &:extend(.info-tip all);
+    background: @success-bg;
+    border: 1px solid @success-border;
+}

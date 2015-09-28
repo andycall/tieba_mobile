@@ -1,0 +1,43 @@
+/**baseStart**/
+/**baseEnd**/
+/**before color standard**/
+/**before color standard**/
+/*font*/
+/*line-height*/
+/*button component*/
+/*pagination component*/
+/* form component */
+/* table-component */
+/* Padding for `<th>`s and `<td>`s. */
+/* Padding for cells in `.table-condensed`. 紧凑型的padding*/
+/* 表格默认背景*/
+/* Background color used for `.table-striped` 条纹背景色. */
+/* Background color used for `.table-hover`.*/
+/* Border color for table and cell borders.*/
+/* table margin-bottom */
+/*info-tip*/
+/*css-transition
+* @ease: ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end | steps(<integer>[, [ start | end ] ]?) | cubic-bezier(<number>, <number>, <number>, <number>)
+*/
+/*transform*/
+/*旋转*/
+/*缩放*/
+/*移动*/
+/*扭曲*/
+/*animate*/
+/**
+* @author: yuanzhen
+* @date: 15/01/08
+* @desc: button
+*/
+.triangle-base {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  -moz-transform: scale(0.9999);
+}
+/**
+ * @desc 表格样式
+ * @author zhangshibiao
+ * @date  2015-05-11
+ */

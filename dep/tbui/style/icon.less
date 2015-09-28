@@ -1,0 +1,50 @@
+/**before**/
+.icon_tbean{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/tbean.png) no-repeat;
+}
+
+
+.icon-sprite-common(@list){
+    @index: length(@list);
+    .loop(@index) when (@index > 0){
+        @text: e(extract(@list, @index));
+        @value: extract(@text, 1);
+        .icon-@{value}{
+            display: inline-block;
+            width: extract(@text, 2);
+            height: extract(@text, 3);
+            background: url("../images/@{value}.png?__sprite");
+        }
+        .loop((@index - 1));
+    }
+    .loop(@index);
+}
+
+@list: tbean 16px 16px,
+       vip1-16 16px 16px,
+       vip1-18 18px 18px,
+       vip2-16 16px 16px,
+       vip2-18 18px 18px,
+       vip1-gray-16 16px 16px,
+       vip1-gray-18 18px 18px,
+       vip2-gray-16 16px 16px,
+       vip2-gray-18 18px 18px;
+
+.icon-sprite-common(@list);
+
+.icon-loading-32 {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(images/icon-loading-32.gif) no-repeat;
+}
+
+.icon-loading-64 {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url(images/icon-loading-64.gif) no-repeat;
+}

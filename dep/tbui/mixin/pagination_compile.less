@@ -1,0 +1,18 @@
+.pagination-size(@padding-vertical; @padding-horizontal; @font-size){
+    padding: @padding-vertical @padding-horizontal;
+    font-size: @font-size;
+}
+
+.pagination-style(@background-color; @text-color; @border-color; @background-hover-color; @text-hover-color; @border-hover-color){
+    background: @background-color;
+    color: @text-color;
+    border: 1px solid @border-color;
+    &:visited{
+        color: @text-color;
+    }
+    &:hover{
+        background: @background-hover-color;
+        color: @text-hover-color;
+        border: 1px solid @border-hover-color;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/hot_message.css"/>
+</head>
+<body>
+    <div id="container"></div>
+    <button id="addData">ADD</button>
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/react/dist/react-with-addons.js"></script>
+<script src="node_modules/react/dist/JSXTransformer.js"></script>
+<script type="text/jsx" src="js/new_hotMessage.js"></script>
+<script type="text/jsx">
+</script>
+<script type="text/jsx">
+    var data = {
+        item: []
+    };
+
+    var rawData = {
+        kw: '啦啦啦',
+        uid: '123123213123',
+        fid: 'aaaaa',
+        itb_tbs: 'qdqwdqwdqwd12e12d1',
+        isLogin: 1,
+        hasFocused: false,
+        buttonText: "DB 吧"
+    };
+
+    data.item.push({
+        kw: '啦啦啦',
+        uid: '123123213123',
+        fid: 'aaaaa',
+        itb_tbs: 'qdqwdqwdqwd12e12d1',
+        isLogin: 1,
+        hasFocused: false,
+        buttonText: "DB 吧"
+    });
+    data.item.push({
+        kw: '啦啦啦',
+        uid: '12312321312312312312213',
+        fid: 'aaaaaddqwdqwd',
+        itb_tbs: 'qdqwdqwdqwd12e12d1',
+        isLogin: 1,
+        hasFocused: false,
+        buttonText: "DB 吧"
+    });
+
+    React.render(
+            <FocusButtonGroup buttonText="click" data={JSON.stringify(data)}>
+            </FocusButtonGroup>,
+            document.getElementById('container')
+    );
+</script>
+</html>

@@ -1,0 +1,6 @@
+.triangle-base {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  -moz-transform: scale(0.9999);
+}

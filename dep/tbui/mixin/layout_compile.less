@@ -1,0 +1,50 @@
+.get-column-three(@namespace, @left, @right, @gutter: 10px){
+    @{namespace}{
+        .col3_left,
+        .col3-left {
+            width: @left;
+            margin-left: -100%;
+        }
+        .col3_right,
+        .col3-right {
+            width: @right;
+            margin-left: -@right;
+        }
+        .col3_main,
+        .col3-main{
+            margin-left: @left + @gutter;
+            margin-right: @right + @gutter;
+        }
+    }
+}
+
+
+.get-column-two(@namespace, @left){
+    @{namespace}{
+        .col2_left,
+        .col2-left{
+            width: @left;     
+        }
+        .col2_right,
+        .col2-right{
+            margin-left: @left;
+        }
+    }
+}
+
+.get-equal-column-two(@namespace, @left, @left-color, @right-color, @min-height){
+    @{namespace}{
+        background-color: @left-color;
+        .col2-left{
+            float: left;
+            width: @left;
+            min-height: @min-height;
+            background-color: @left-color;
+        }
+        .col2-right{
+            margin-left: @left;
+            min-height: @min-height;
+            background-color: @right-color;
+        }
+    }
+}

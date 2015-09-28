@@ -1,0 +1,13 @@
+{
+  "name": "tbui",
+  "version": "0.1.0",
+  "authors": [
+    "yuanzhen"
+  ],
+  "main": [
+    "style/all.less"
+  ],
+  "ignore": [
+    "mixin"
+  ]
+}

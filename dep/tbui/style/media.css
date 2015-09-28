@@ -1,0 +1,101 @@
+/**
+* @author: yuanzhen
+* @date: 15/01/08
+* @desc: 
+*/
+/*=================================
+* 水平方向媒体对象公共样式demo
+* <div class="media-horizontal">
+*     <a class="media-left">
+*         <img src="" alt="" />
+*         <span class="media-caption">头像的边角，类似hot/new这样的标志</span>
+*     </a>
+*     <div class="media-right"></div>
+*     <div class="media-absolute">需要绝对定位的元素</div>
+* </div>
+*===============================*/
+.media_horizontal,
+.media-horizontal {
+  position: relative;
+}
+.media_left,
+.media_right,
+.media-left,
+.media-right {
+  vertical-align: top;
+}
+.media_left,
+.media-left {
+  position: relative;
+  float: left;
+}
+.media_left img,
+.media-left img {
+  width: 100%;
+  height: 100%;
+}
+.media_right,
+.media-right {
+  position: relative;
+}
+.media_right img,
+.media-right img,
+.media_right input,
+.media-right input,
+.media_right a,
+.media-right a,
+.media_right span,
+.media-right span,
+.media_right strong,
+.media-right strong,
+.media_right i,
+.media-right i,
+.media_right em,
+.media-right em,
+.media_right ins,
+.media-right ins,
+.media_right b,
+.media-right b,
+.media_right button,
+.media-right button {
+  vertical-align: middle;
+}
+/*=================================
+* 竖直方向媒体对象公共样式demo
+* <div class="media-vertical">
+*     <a class="media-top">
+*         <img src="" alt="" />
+*         <span class="media-caption">头像的边角，类似hot/new这样的标志</span>
+*     </a>
+*     <div class="media-bottom"></div>
+*     <div class="media-absolute">需要绝对定位的元素</div>
+* </div>
+*===============================*/
+.media_vertical,
+.media-vertical {
+  position: relative;
+}
+.media_top,
+.media-top {
+  display: inline-block;
+  position: relative;
+}
+.media_top img,
+.media-top img {
+  width: 100%;
+  height: 100%;
+}
+/*媒体图像角标*/
+.media_caption,
+.media-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*需要绝对定位的元素, 不在正常的媒体对象里*/
+.media_absolute,
+.media-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

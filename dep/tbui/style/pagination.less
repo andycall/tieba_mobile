@@ -1,0 +1,25 @@
+.pagination-default{
+    li {
+       float: left;
+       display: inline-block;
+       margin-right: 4px;
+       &:last-child{
+           margin-right: 0;
+       }
+    }
+    .pagination-item{
+        display: inline-block;
+        cursor: pointer;
+        line-height: normal;
+        .a-decoration(@hover: none);
+        .pagination-size(5px, 9px, 12px);
+        .pagination-style(@default-item-bg; @default-item-text; @default-item-border; @default-item-bg-hover; @default-item-text-hover; @default-item-border-hover);
+    }
+    .pagination-current{
+        .pagination-style(@default-current-bg; @default-current-text; @default-current-border; @default-current-bg-hover; @default-current-text-hover; @default-current-border);
+    }
+    .pagination-disabled{
+        cursor: not-allowed;
+        .pagination-style(@default-item-bg; @default-item-text; @default-item-border;  @default-item-bg; @default-item-text; @default-item-border);
+    }
+}

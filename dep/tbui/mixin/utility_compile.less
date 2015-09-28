@@ -1,0 +1,130 @@
+.clearfix() {
+    zoom:1;
+    &:before,
+    &:after {
+       content: " "; 
+       display: table; 
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.text-overflow(){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-overflow(@line-number){
+    display: -webkit-box;
+    -webkit-line-clamp: @line-number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+};
+
+.user-select(@select) {
+    user-select: @select;
+}
+
+.center-block(@top: 0, ...) {
+    @len: length(@arguments);
+    .center-inner-mixin(...) when (@len = 1) {
+        @bottom: @top;
+    }
+    .center-inner-mixin(...) when (@len = 2) {
+        @top: extract(@arguments, 1);
+        @bottom: extract(@arguments, 2);
+    }
+    .center-inner-mixin(@arguments);
+    display: block;
+    margin: @top auto @bottom;
+}
+
+.center-text() {
+    display: block;
+    text-align: center;
+}
+
+.hide-text() {
+    font: ~"0/0" a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.size(@width; @height) {
+    width: @width;
+    height: @height;
+}
+
+.square(@size) {
+    .size(@size; @size);
+}
+
+.tab-focus() {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.box-sizing(@boxmodel) {
+    box-sizing: @boxmodel;
+}
+
+.placeholder(@color: @input-color-placeholder) {
+    &::-moz-placeholder {
+        color: @color;
+        opacity: 1;
+    }
+    &:-ms-input-placeholder {
+        color: @color;
+    }
+    &::-webkit-input-placeholder {
+        color: @color;
+    }
+}
+
+.pull-left(){
+    float: left !important;
+}
+
+.pull-right(){
+    float: right !important;
+}
+
+.icon-sprite-multi(@list){
+    @index: length(@list);
+    .loop(@index) when (@index > 0){
+        @text: e(extract(@list, @index));
+        @value: extract(@text, 1);
+        .icon-@{value}{
+            display: inline-block;
+            width: extract(@text, 2);
+            height: extract(@text, 3);
+            background: url("images/@{value}.png?__sprite");
+        }
+       .loop((@index - 1));
+    }
+    .loop(@index);
+}
+
+.icon-sprite-single(@list){
+    @index: length(@list);
+    .loop(@index) when (@index > 0){
+        @value: e(extract(@list, @index));
+        .icon-@{value}{
+            background: url("images/@{value}.png?__sprite");
+        }
+       .loop((@index - 1));
+    }
+    .loop(@index);
+}
+
+.background-size(@image-url, @rest...){
+    background-image: @image-url;
+    background-size: @rest;
+    filter: e(%("progid:DXImageTransform.Microsoft.AlphaImageLoader(src=%d, sizingMethod='scale')", @image-url));
+}
+

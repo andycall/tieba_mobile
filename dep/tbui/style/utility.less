@@ -1,0 +1,53 @@
+// from: https://github.com/twbs/bootstrap/blob/master/less/mixins/clearfix.less
+.clearfix {
+    zoom:1;
+    &:after {
+       content: " "; 
+       display: table; 
+        clear: both;
+    }
+}
+
+.text_overflow,
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.user-select(@select) {
+    user-select: @select;
+}
+
+.center_text,
+.center-text {
+    display: block;
+    text-align: center;
+}
+
+.pull_left,
+.pull-left {
+    float: left !important; 
+}
+
+.pull_right,
+.pull-right {
+    float: right !important; 
+}
+
+.hide_text,
+.hide-text{
+    font: ~"0/0" a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.image-round{
+    .rounded-corner(50%);
+}
+
+.image-radius{
+    .rounded-corner(4px);
+}

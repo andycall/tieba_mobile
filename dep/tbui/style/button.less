@@ -1,0 +1,46 @@
+button{
+    &:extend(.btn all);
+    @start: extract(@sub-bg, 1);
+    @end: extract(@sub-bg, 2);
+    background-color: @start;
+    background-image: linear-gradient(to bottom, @start 0, @end 100%);
+    color: @sub-text;
+    border-color: @sub-border;
+}
+.make-btn-style();
+.make-btn-size();
+
+.btn-middle [class^="icon-"] {
+    display: inline-block;
+    .size(14px, 14px);
+    font-size: 14px;
+    margin-right: 4px;
+    vertical-align: middle;
+    margin-top: -.2em;
+}
+
+.btn-large [class^="icon-"],
+.btn-larger [class^="icon-"]{
+    display: inline-block;
+    .size(16px, 16px);
+    font-size: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
+    margin-top: -.2em;
+}
+
+.btn-middle .iconfont {
+  font-size: 14px;
+}
+
+.btn-middle .iconfont,
+.btn-large .iconfont,
+.btn-larger .iconfont {
+    margin-right: 4px;
+    font-weight: normal;
+}
+
+.btn-large .iconfont,
+.btn-larger .iconfont {
+    vertical-align: 1px;
+}

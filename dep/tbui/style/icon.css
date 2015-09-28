@@ -1,0 +1,73 @@
+/**before**/
+.icon_tbean {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/tbean.png) no-repeat;
+}
+.icon-vip2-gray-18 {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../images/vip2-gray-18.png?__sprite");
+}
+.icon-vip2-gray-16 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/vip2-gray-16.png?__sprite");
+}
+.icon-vip1-gray-18 {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../images/vip1-gray-18.png?__sprite");
+}
+.icon-vip1-gray-16 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/vip1-gray-16.png?__sprite");
+}
+.icon-vip2-18 {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../images/vip2-18.png?__sprite");
+}
+.icon-vip2-16 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/vip2-16.png?__sprite");
+}
+.icon-vip1-18 {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../images/vip1-18.png?__sprite");
+}
+.icon-vip1-16 {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/vip1-16.png?__sprite");
+}
+.icon-tbean {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/tbean.png?__sprite");
+}
+.icon-loading-32 {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(images/icon-loading-32.gif) no-repeat;
+}
+.icon-loading-64 {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background: url(images/icon-loading-64.gif) no-repeat;
+}

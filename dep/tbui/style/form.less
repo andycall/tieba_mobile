@@ -1,0 +1,138 @@
+/**
+ * @desc 表单样式
+ * @author dengxi
+ * @date  2015-05-06
+ */
+
+/*------- form style reset start ---------*/
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    min-width: 0;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  line-height: normal;
+}
+
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  .tab-focus();
+}
+/*------- form style reset end ---------*/
+
+/*input text*/
+.form-control-small{
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    padding: 0 @form-control-padding;
+}
+
+.form-control-large{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 @form-control-padding;
+}
+
+.form-control{
+    &:extend(.form-control-small);
+    border: 1px solid @form-control-border;
+    border-top-color: @form-control-border-top;
+    &:focus{
+        border-color: @form-control-focus-border;
+    }
+    &-disabled,
+    &[disabled]{
+        &:extend(.form-control-small);
+        border: 1px solid @form-control-border;
+        background: @form-control-disabled-bg;
+        cursor: not-allowed;
+    }
+    &-error{
+        &:extend(.form-control-small);
+        border: 1px solid @form-control-error-border;
+    }
+    &[type=number] {
+        padding-right: 0;
+    }
+    select& {
+        padding: 0 \9; // for reason that ie will clip padding for <option>
+    }
+}
+
+.checkbox,
+.checkbox-disabled,
+.radio,
+.radio-disabled{
+    margin-right: 20px;
+}
+
+.checkbox-disabled,
+.radio-disabled{
+    color: #ccc;
+}
+
+.checkbox,
+.radio,
+.checkbox-inline,
+.radio-inline {
+    input {
+        margin-right: @form-label-margin-right;
+        vertical-align: middle;
+    }
+}
+
+/*------- form style with class start ---------*/
+// style for form element wrap
+.form-group {
+    line-height: @form-group-line-height;
+    margin: @form-group-margin;
+    color: @form-base-color;
+    .form-label {
+        margin-right: @form-label-margin-right;
+    }
+}
+
+// block form style
+.form {
+    .form-group {
+        height: auto;
+    }
+    .form-label {
+        display: block;
+    }
+    .form-control {
+        display: block;
+    }
+}
+
+// inline form style
+.form-inline {
+    .form-label {
+        float: left;
+        text-align: right;
+    }
+}
+/*------- form style with class end ---------*/

@@ -1,0 +1,23 @@
+{
+  "name": "tieba_mobile",
+  "version": "0.0.1",
+  "description": "tieba UI components based on React",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andycall/tieba_mobile.git"
+  },
+  "keywords": [
+    "tieba",
+    "React"
+  ],
+  "author": "andycall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andycall/tieba_mobile/issues"
+  },
+  "homepage": "https://github.com/andycall/tieba_mobile#readme"
+}

@@ -1,0 +1,29 @@
+/*三栏布局共有属性*/
+.col3_body,
+.col3_left,
+.col3_right,
+.col3-body,
+.col3-left,
+.col3-right {
+  float: left;
+  height: 100%;
+}
+.col3_body,
+.col3-body {
+  width: 100%;
+}
+.col3_main,
+.col3-main {
+  height: 100%;
+}
+/*两栏布局共有属性*/
+.col2_left,
+.col2-left {
+  float: left;
+  min-height: 1px;
+}
+.col2_right,
+.col2-right {
+  position: relative;
+  min-height: 1px;
+}
